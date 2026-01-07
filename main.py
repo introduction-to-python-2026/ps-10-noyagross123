@@ -5,7 +5,7 @@ from skimage.morphology import ball
 from image_utils import load_image, edge_detection
 
 def main():
-    image_path = 'tal bezet2.jpg' 
+    image_path = 'Noya.jpg' 
     original_img = load_image(image_path)
     clean_image = median(original_img, ball(3))
     edge_mag = edge_detection(clean_image)
